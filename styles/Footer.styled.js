@@ -72,6 +72,16 @@ export const Form = styled.form`
     padding: 1rem 2rem;
     border-radius: 5px;
     width: 20rem;
+    font-size: 1.2rem;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+      border: 3px solid ${({ isValid }) => (isValid ? 'limegreen' : 'red')};
+    }
   }
 
   button {
@@ -84,6 +94,13 @@ export const Form = styled.form`
 
   li {
     color: hsl(0, 100%, 63%);
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    button {
+      margin-top: 2rem;
+      margin-left: 9rem;
+    }
   }
 `;

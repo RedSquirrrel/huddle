@@ -3,8 +3,33 @@ import Socials from './Socials';
 import { Flex } from '../styles/Flex.styled';
 import { StyledFooter, ImageFooter, Form } from '../styles/Footer.styled';
 import { Button } from '../styles/Button.styled';
+import { useState } from 'react';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [subscribe, setSubscribe] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const handleSubscribe = e => {
+    e.preventDefault();
+    if (!email) {
+      setMessage('Enter a valid email, please');
+      setTimeout(() => {
+        setMessage(null);
+      }, 2000);
+    } else {
+      setMessage('Check your email please');
+      setTimeout(() => {
+        setMessage("Don't worry, It's not real :)");
+        setTimeout(() => {
+          setMessage(null);
+        }, 2000);
+      }, 2000);
+    }
+    setSubscribe(true);
+    setEmail('');
+  };
+
   return (
     <>
       <ImageFooter width={1000} height='2rem' src='/images/bg-footer-top-desktop.svg' />
@@ -38,12 +63,12 @@ const Footer = () => {
               email address
             </li>
 
-            <Form>
-              <input type='text' placeholder='john@mail.com' />
+            <Form onSubmit={handleSubscribe} isValid={!subscribe}>
+              <input value={email} onChange={e => setEmail(e.target.value)} type='email' placeholder='john@mail.com' />
               <Button bg='hsl(322, 100%, 66%)' color='#fff' border='transparent'>
                 Subscribe
               </Button>
-              <li>Check your email please</li>
+              {subscribe && <li>{message}</li>}
             </Form>
           </ul>
         </Flex>
