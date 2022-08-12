@@ -1,6 +1,5 @@
 import { StyledCard } from '../styles/Card.styled';
 
-// <StyledCard layout={id % 2 === 0 && 'row-reverse'}>
 const Card = ({ item: { id, title, body, image } }) => {
   const ifOdd = id % 2 === 0;
 

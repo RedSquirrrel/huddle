@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const HeaderText = styled.div`
-  /* margin-top: 14.8rem; */
-  /* width: 100%; */
   margin: 14.6rem auto auto 1rem;
   h1 {
     font-size: clamp(1rem, 3.2vw, 3rem);
@@ -10,9 +8,7 @@ export const HeaderText = styled.div`
   }
   p {
     width: 52ch;
-    /* line-height: 2; */
     margin: 1.7rem auto;
-    /* font-weight: 600; */
   }
 
   button {

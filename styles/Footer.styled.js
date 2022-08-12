@@ -50,9 +50,6 @@ export const StyledFooter = styled.footer`
     ul {
       padding: 0;
     }
-    /* p {
-      text-align: center;
-    } */
   }
 `;
 

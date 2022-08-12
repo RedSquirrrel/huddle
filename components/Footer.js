@@ -1,7 +1,7 @@
 import Socials from './Socials';
 
 import { Flex } from '../styles/Flex.styled';
-import { StyledFooter, ImageFooter, Form, StyledSocials } from '../styles/Footer.styled';
+import { StyledFooter, ImageFooter, Form } from '../styles/Footer.styled';
 import { Button } from '../styles/Button.styled';
 
 const Footer = () => {
@@ -57,8 +57,6 @@ const Footer = () => {
             @RedSquirrel
           </a>
         </p>
-
-        {/* <p>&copy; 2022 Huddle. All rights reserverd</p> */}
       </StyledFooter>
     </>
   );

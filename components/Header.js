@@ -26,7 +26,6 @@ const Header = () => {
         </HeaderText>
 
         <Image src='/images/screen-mockups.svg' alt='mockups' />
-        {/* <Image width={960} height={685.44} src='/images/screen-mockups.svg' alt='mockups' /> */}
       </Container>
     </StyledHeader>
   );

@@ -1,6 +1,5 @@
 import { ThemeProvider } from 'styled-components';
 
-// import { Container } from '../styles/Container.styled';
 import { CardContainer } from '../styles/Card.styled';
 import GlobalStyles from '../styles/Globals';
 

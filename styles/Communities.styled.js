@@ -10,22 +10,11 @@ export const CommunitiesContainer = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
-    /* background-color: red; */
-    /* gap: 1rem; */
-
-    /* text-align: center; */
-    /* justify-content: center; */
-    /* align-content: center; */
   }
 `;
 
 export const Content = styled.div`
-  /* height: 30rem; */
-  /* background-color: red; */
-
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    /* width: 100%; */
-    /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +32,6 @@ export const Content = styled.div`
   }
 
   p {
-    /* margin: 0; */
     text-align: center;
     font-size: clamp(0.8rem, 1.5vw, 1.5rem);
     @media (max-width: ${({ theme }) => theme.mobile}) {
