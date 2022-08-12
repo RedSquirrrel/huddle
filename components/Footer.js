@@ -80,11 +80,11 @@ const Footer = () => {
         </Flex>
         <p>
           Challenge by{' '}
-          <a href='https://www.frontendmentor.io?ref=challenge' target='_blank'>
+          <a href='https://www.frontendmentor.io?ref=challenge' target='_blank' rel='noreferrer noopener'>
             Frontend Mentor
           </a>
           . Coded by{' '}
-          <a href='https://github.com/RedSquirrrel' target='_blank' rel='noreferrer'>
+          <a href='https://github.com/RedSquirrrel' target='_blank' rel='noreferrer noopener'>
             @RedSquirrel
           </a>
         </p>
