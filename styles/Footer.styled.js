@@ -55,7 +55,6 @@ export const StyledFooter = styled.footer`
 
 export const StyledSocials = styled.div`
   width: 10%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +62,11 @@ export const StyledSocials = styled.div`
     max-width: 50px;
     height: 50px;
     margin-left: 1rem;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.2s;
+    }
   }
 `;
 

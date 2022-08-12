@@ -10,7 +10,9 @@ const Card = ({ item: { id, title, body, image } }) => {
         <p>{body}</p>
       </div>
       <div>
-        <img src={`/images/${image}`} alt='illustration' />
+        <picture>
+          <img src={`/images/${image}`} alt='illustration' />
+        </picture>
       </div>
     </StyledCard>
   );

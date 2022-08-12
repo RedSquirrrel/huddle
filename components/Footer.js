@@ -35,7 +35,9 @@ const Footer = () => {
       <ImageFooter width={1000} height='2rem' src='/images/bg-footer-top-desktop.svg' />
       <StyledFooter>
         <Flex>
-          <img src='/images/icon-white.svg' alt='white logo' />
+          <picture>
+            <img src='/images/icon-white.svg' alt='white logo' />
+          </picture>
           <h2>Huddle</h2>
         </Flex>
         <Flex>
@@ -44,11 +46,15 @@ const Footer = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
             </li>
             <li>
-              <img src='/images/icon-phone.svg' alt='phone' />
+              <picture>
+                <img src='/images/icon-phone.svg' alt='phone' />
+              </picture>
               Phone +1-543-123-4567
             </li>
             <li>
-              <img src='/images/icon-email.svg' alt='email icon' />
+              <picture>
+                <img src='/images/icon-email.svg' alt='email icon' />
+              </picture>
               example@huddle.com
             </li>
             <li>
@@ -78,7 +84,7 @@ const Footer = () => {
             Frontend Mentor
           </a>
           . Coded by{' '}
-          <a href='https://github.com/RedSquirrrel' target='_blanck'>
+          <a href='https://github.com/RedSquirrrel' target='_blank' rel='noreferrer'>
             @RedSquirrel
           </a>
         </p>
